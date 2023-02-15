@@ -19,9 +19,9 @@
       }
     },
     {
-      "identity" : "iplabs-sdk-ios-spm",
+      "identity" : "mobile-sdk-ios-spm",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/iplabs/iplabs-sdk-ios-spm",
+      "location" : "https://github.com/iplabs/mobile-sdk-ios-spm",
       "state" : {
         "branch" : "main",
         "revision" : "1e65785ad5c8a26897a60179551f01adf1862ed2"

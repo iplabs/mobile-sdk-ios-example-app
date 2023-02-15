@@ -12,7 +12,7 @@
 		3B764E24288FF7FE00DF60CB /* ProjectTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B764E23288FF7FE00DF60CB /* ProjectTableViewCell.swift */; };
 		3BCAD18A2886B45300F9C31C /* translations.json in Resources */ = {isa = PBXBuildFile; fileRef = 3BCAD1892886B45300F9C31C /* translations.json */; };
 		8F01883C27FF23A10021FF50 /* CartService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F01883B27FF23A10021FF50 /* CartService.swift */; };
-		8F6D89512948928C00E686E9 /* IplabsSdk in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6D89502948928C00E686E9 /* IplabsSdk */; };
+		8F24F9CC299CCAA3002263B9 /* IplabsSdk in Frameworks */ = {isa = PBXBuildFile; productRef = 8F24F9CB299CCAA3002263B9 /* IplabsSdk */; };
 		8F73014D298A789C0084EA04 /* Amplitude in Frameworks */ = {isa = PBXBuildFile; productRef = 8F73014C298A789C0084EA04 /* Amplitude */; };
 		8F730150298A78B70084EA04 /* ConfigService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F73014F298A78B70084EA04 /* ConfigService.swift */; };
 		8F730153298A78E40084EA04 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F730152298A78E40084EA04 /* MainViewController.swift */; };
@@ -68,8 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F24F9CC299CCAA3002263B9 /* IplabsSdk in Frameworks */,
 				8F73014D298A789C0084EA04 /* Amplitude in Frameworks */,
-				8F6D89512948928C00E686E9 /* IplabsSdk in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,8 +189,8 @@
 			);
 			name = "iplabs-sdk-ios-example-app";
 			packageProductDependencies = (
-				8F6D89502948928C00E686E9 /* IplabsSdk */,
 				8F73014C298A789C0084EA04 /* Amplitude */,
+				8F24F9CB299CCAA3002263B9 /* IplabsSdk */,
 			);
 			productName = "sdk-poc";
 			productReference = 8FE8E4A326BD2ED80057A176 /* iplabs-sdk-ios-example-app.app */;
@@ -220,8 +220,8 @@
 			);
 			mainGroup = 8FE8E49A26BD2ED80057A176;
 			packageReferences = (
-				8F6D894F2948928C00E686E9 /* XCRemoteSwiftPackageReference "iplabs-sdk-ios-spm" */,
 				8F73014B298A789C0084EA04 /* XCRemoteSwiftPackageReference "Amplitude-iOS" */,
+				8F24F9CA299CCAA3002263B9 /* XCRemoteSwiftPackageReference "mobile-sdk-ios-spm" */,
 			);
 			productRefGroup = 8FE8E4A426BD2ED80057A176 /* Products */;
 			projectDirPath = "";
@@ -477,9 +477,9 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		8F6D894F2948928C00E686E9 /* XCRemoteSwiftPackageReference "iplabs-sdk-ios-spm" */ = {
+		8F24F9CA299CCAA3002263B9 /* XCRemoteSwiftPackageReference "mobile-sdk-ios-spm" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/iplabs/iplabs-sdk-ios-spm";
+			repositoryURL = "https://github.com/iplabs/mobile-sdk-ios-spm";
 			requirement = {
 				branch = main;
 				kind = branch;
@@ -496,9 +496,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8F6D89502948928C00E686E9 /* IplabsSdk */ = {
+		8F24F9CB299CCAA3002263B9 /* IplabsSdk */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 8F6D894F2948928C00E686E9 /* XCRemoteSwiftPackageReference "iplabs-sdk-ios-spm" */;
+			package = 8F24F9CA299CCAA3002263B9 /* XCRemoteSwiftPackageReference "mobile-sdk-ios-spm" */;
 			productName = IplabsSdk;
 		};
 		8F73014C298A789C0084EA04 /* Amplitude */ = {
