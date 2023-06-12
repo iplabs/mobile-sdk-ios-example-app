@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/amplitude/Amplitude-iOS",
       "state" : {
-        "revision" : "483ec5c74b50f0d483013fc910fe890ec34e54d2",
-        "version" : "8.14.0"
+        "revision" : "b9512600a0367f5b38c75ad71e822be9ebd9406a",
+        "version" : "8.16.1"
       }
     },
     {
@@ -24,7 +24,7 @@
       "location" : "https://github.com/iplabs/mobile-sdk-ios-spm",
       "state" : {
         "branch" : "main",
-        "revision" : "1e65785ad5c8a26897a60179551f01adf1862ed2"
+        "revision" : "3265757d8f58286a58a8533badde04e78d4b1cb1"
       }
     }
   ],

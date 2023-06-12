@@ -24,10 +24,12 @@ class ProductViewController: UIViewController {
             let row = UIStackView()
             row.axis = .horizontal
             row.alignment = .firstBaseline
-            row.distribution = .equalSpacing
+            row.distribution = .fillEqually
+            row.spacing = 8.0
 
             let optionLabel = UILabel()
             optionLabel.text = option.name
+            optionLabel.textAlignment = .right
             row.addArrangedSubview(optionLabel)
 
             let optionCount = option.values.count
@@ -55,6 +57,7 @@ class ProductViewController: UIViewController {
                     let defaultValue = option.values.first(where: {$0.id == option.defaultValue})
                     optionButton.setTitle(defaultValue?.name, for: .normal)
                 }
+                optionButton.contentHorizontalAlignment = .left
 
                 row.addArrangedSubview(optionButton)
             }

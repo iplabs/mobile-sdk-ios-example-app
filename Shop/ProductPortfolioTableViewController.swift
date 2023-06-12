@@ -4,12 +4,15 @@ import IplabsSdk
 
 class ProductPortfolioTableViewController: UITableViewController {
     private var products: [Product]?
+    
+    // hide any products which should not be presented to the user 
+    private var hiddenProductIds = [50035648, 50035650, 60002077]
 
     private func loadPortfolioProducts() async {
         let result = await IplabsMobileSdk.shared.retrieveProductPortfolio()
         switch result {
         case .success(let portfolio):
-            self.products = portfolio.products
+            self.products = portfolio.products.filter({ !hiddenProductIds.contains($0.id) })
             DispatchQueue.main.async {
                 self.tableView.reloadData()
             }
@@ -28,12 +31,10 @@ class ProductPortfolioTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
         return self.products?.count ?? 0
     }
 

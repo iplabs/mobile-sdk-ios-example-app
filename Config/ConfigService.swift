@@ -12,4 +12,12 @@ class ConfigService {
         
         return value
     }
+    
+    func getInfoPlistURL(for key: String) -> URL? {
+        guard let string = getInfoPlistString(for: key) else {
+            return nil
+        }
+        
+        return URL(string: string.replacingOccurrences(of: "\\", with: ""))
+    }
 }

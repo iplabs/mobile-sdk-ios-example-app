@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIh-Up-ZM8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bIh-Up-ZM8">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <viewController storyboardIdentifier="EditorWebView" hidesBottomBarWhenPushed="YES" id="BYZ-38-t0r" customClass="MainViewController" customModule="ios_demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -152,11 +152,11 @@
             <objects>
                 <viewController id="BRt-SI-Fh5" customClass="CartQuantityPickerViewController" customModule="ios_demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9kf-Cg-F3s">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="886"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZk-si-eh4">
-                                <rect key="frame" x="0.0" y="56" width="414" height="782"/>
+                                <rect key="frame" x="0.0" y="56" width="414" height="830"/>
                                 <connections>
                                     <outlet property="dataSource" destination="BRt-SI-Fh5" id="Eog-jr-FKG"/>
                                     <outlet property="delegate" destination="BRt-SI-Fh5" id="WWb-31-nWW"/>
@@ -393,7 +393,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="StoredProjectsView" id="wdr-2i-VKc" customClass="StoredProjectsTableViewController" customModule="ios_demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="fXw-gC-vgW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -483,16 +483,16 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ce-Ll-tWp">
-                            <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="35" width="375" height="44"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No Projects" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gQk-LG-1FW">
-                                    <rect key="frame" x="10" y="0.0" width="355" height="26.666666666666668"/>
+                                    <rect key="frame" x="10" y="0.0" width="355" height="26.5"/>
                                     <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                                     <color key="textColor" systemColor="systemGray2Color"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You don't have any saved projects." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cQD-gh-NWA">
-                                    <rect key="frame" x="10" y="50" width="355" height="20.333333333333329"/>
+                                    <rect key="frame" x="10" y="50" width="355" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20.333333333333329" id="TZb-FI-5Ni"/>
                                     </constraints>
@@ -532,7 +532,7 @@
                                     <rect key="frame" x="20" y="10" width="335" height="60"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please log in to see your cloud projects." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e5B-eg-1AL">
-                                            <rect key="frame" x="0.0" y="9.6666666666666679" width="200" height="40.666666666666657"/>
+                                            <rect key="frame" x="0.0" y="9.5" width="200" height="41"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="200" id="WzL-PC-82O"/>
                                             </constraints>
@@ -541,7 +541,7 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJa-rE-eGU">
-                                            <rect key="frame" x="269.33333333333331" y="13" width="65.666666666666686" height="34.333333333333336"/>
+                                            <rect key="frame" x="269" y="13" width="66" height="34.5"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="tinted" title="Login"/>
                                             <connections>
@@ -633,7 +633,7 @@
             <objects>
                 <tableViewController storyboardIdentifier="AccountTableView" id="1EJ-5v-Ssu" customClass="AccountTableViewController" customModule="ios_demo_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" id="pvz-wX-bNQ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="838"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="AccountRow" id="AVk-fB-wGQ">
@@ -662,17 +662,17 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="V0v-K8-l00">
-                            <rect key="frame" x="50" y="10" width="140" height="108"/>
+                            <rect key="frame" x="50" y="10" width="140" height="74"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="5qj-za-9lO">
-                                    <rect key="frame" x="40" y="2" width="60" height="56.666666666666671"/>
+                                    <rect key="frame" x="57.5" y="1.5" width="25" height="22.5"/>
                                     <constraints>
                                         <constraint firstAttribute="width" secondItem="5qj-za-9lO" secondAttribute="height" multiplier="1:1" id="Hho-vw-QFf"/>
                                         <constraint firstAttribute="width" constant="60" id="mRx-MR-SOb"/>
                                     </constraints>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XlP-p6-t9m">
-                                    <rect key="frame" x="33.666666666666664" y="61" width="72.666666666666686" height="22"/>
+                                    <rect key="frame" x="33.5" y="26.5" width="73" height="22"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="22" id="lNf-6e-pa3"/>
                                     </constraints>
@@ -681,7 +681,7 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="j.doe@iplabs.de" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1c-6C-cn2">
-                                    <rect key="frame" x="21.999999999999993" y="84" width="96.333333333333314" height="24"/>
+                                    <rect key="frame" x="22" y="49.5" width="96.5" height="24.5"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                     <color key="textColor" systemColor="placeholderTextColor"/>
                                     <nil key="highlightedColor"/>
@@ -722,9 +722,9 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Zgn-DZ-T6g"/>
-        <segue reference="Rff-w9-3YH"/>
-        <segue reference="kD1-Oa-Zvi"/>
+        <segue reference="2uH-Q3-060"/>
+        <segue reference="pNR-8c-aLW"/>
+        <segue reference="48b-a0-hw6"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.triangle.2.circlepath.circle.fill" catalog="system" width="128" height="123"/>

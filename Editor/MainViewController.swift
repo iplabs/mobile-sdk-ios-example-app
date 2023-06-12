@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
 
     lazy var editorViewController: EditorViewController = {
         let productConfiguration = ProductConfiguration(id: self.productId, options: selectedOptions)
-        let editorConfiguration = EditorConfiguration(allowMultipleElementsForWallDecor: true)
+        let editorConfiguration = EditorConfiguration(allowMultipleElementsForWallDecor: false)
         let branding = Branding(primaryColor: "#000")
 
         let vc: EditorViewController

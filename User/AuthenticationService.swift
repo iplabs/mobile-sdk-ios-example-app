@@ -4,7 +4,7 @@ import IplabsSdk
 
 class AuthenticationService {
     static let shared = AuthenticationService()
-    private let userManagementEnabled = ConfigService.shared.getInfoPlistString(for: "ADD_USER_INFO_URL") != nil
+    private let userManagementEnabled = ConfigService.shared.getInfoPlistURL(for: "ADD_USER_INFO_URL") != nil
 
     private func currentViewController() -> UIViewController? {
         let window = UIApplication
